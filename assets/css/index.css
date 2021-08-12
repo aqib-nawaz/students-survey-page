@@ -34,7 +34,7 @@ body::before {
   height: 100%;
   background: #002e58c2;
   background-image: linear-gradient(59deg, #001268bd, #fe6a0094),
-    url("/assets/images/form-background.jpg");
+    url("../images/form-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
