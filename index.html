@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Survery Form</title>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id="container">
+      <!-- header -->
+      <header>
+        <h1 id="title">Students Survey Form</h1>
+        <p id="description">
+          Please fill this form, Your few minutes will help us improve more.
+        </p>
+      </header>
+
+      <!-- form -->
+      <form action="#" id="survey-form">
+        <!-- Form elements -->
+        <!-- Name Field-->
+        <div class="form-element">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-element">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <!-- Contact Field -->
+        <div class="form-element">
+          <label for="number" id="number-label"
+            >Contact No <span class="clue">(Optional)</span></label
+          >
+          <input
+            type="number"
+            name="contact-number"
+            id="number"
+            class="form-control"
+            min="11"
+            max="20"
+            placeholder="Enter your contact number"
+          />
+        </div>
+
+        <!-- Gender Options -->
+        <div class="form-element">
+          <p>Gender</p>
+          <label for="male" class="gender-label">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              class="input-radio"
+            />
+            Male
+          </label>
+          <label for="female" class="gender-label">
+            <input
+              type="radio"
+              name="gender"
+              id="female-label"
+              value="female"
+              class="input-radio"
+            />
+            Female
+          </label>
+          <label for="other" class="gender-label">
+            <input
+              type="radio"
+              name="gender"
+              id="other-label"
+              value="other"
+              class="input-radio"
+            />
+            Other
+          </label>
+        </div>
+
+        <!-- Courses Options -->
+        <div class="form-element">
+          <p>Which course you have currently Enrolled?</p>
+          <select name="course" id="dropdown" class="form-control" required>
+            <option disabled selected value="">Select a Course</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Android">Android</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="seo">Search Engine Optimization</option>
+          </select>
+        </div>
+
+        <!-- Favorite Feature Options -->
+        <div class="form-element">
+          <p>
+            Which features of our Courses you liked the most?
+            <span class="clue">(Check All that Apply)</span>
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="Pre-Recorded Lectures"
+            />
+            Pre-Recorded Lectures
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="Online Sessions"
+            />
+            Online Sessions
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="Our Community"
+            />
+            Our Community
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="Challanges"
+            />
+            Challanges
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="Hands-on Projects"
+            />
+            Hands-on Projects
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="fav-feature"
+              class="input-checkbox"
+              value="All time Support"
+            />
+            All time Support
+          </label>
+        </div>
+
+        <!-- User Recommendation Options -->
+        <div class="form-element">
+          <p>How much would you recommend us?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="highly"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Highly
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="recommend"
+              type="radio"
+              class="input-radio"
+            />
+            Average
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+        </div>
+
+        <!-- User Comments Field -->
+        <div class="form-element">
+          <p>
+            What do you think we should Improve?
+            <span class="clue">(Any Comments/Suggestions)</span>
+          </p>
+          <textarea
+            type="textarea"
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          >
+          </textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-element">
+          <button type="submit" id="submit-button" class="submit-button">
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
