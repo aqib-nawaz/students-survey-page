@@ -34,7 +34,7 @@ body::before {
   height: 100%;
   background: #002e58c2;
   background-image: linear-gradient(59deg, #001268bd, #fe6a0094),
-    url("/assets/images/form-background.jpg");
+    url("../images/form-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,10 +191,10 @@ footer span {
   font-size: 20px;
   font-weight: bold;
 /* responsive */
-
+}
 @media screen and (max-width: 800px) {
   #container {
-    width: 65%;
+    width: 75%;
   }
   header{
     line-height: inherit;
@@ -203,7 +203,7 @@ footer span {
 
 @media screen and (max-width: 600px) {
   #container {
-    width: 75%;
+    width: 85%;
   }
   header{
     line-height: inherit;
@@ -215,7 +215,7 @@ footer span {
 
 @media screen and (max-width: 300px) {
   #container {
-    width: 95%;
+    width: 97%;
   }
   header{
     line-height: inherit;
